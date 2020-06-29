@@ -1,4 +1,4 @@
-## vscode-rainbow-fart 配置模板
+## rainbow-fart-template
 
 一个简单入门级的配置文件生成脚本，可帮助有语音包但烦于配置的人快速使用。
 
