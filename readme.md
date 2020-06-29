@@ -7,6 +7,8 @@
 #### 快速上手方式
 下载已经包含大量关键词的配置文件 `manifest.json` 与生成脚本 `gener.py`。
 
+先将 `manifest.json` 内的 `name` 等字段简单填写（只是自己使用可不填写）
+
 脚本使用：
 1. 将 `gener.py` 以及 `manifest.json` 放在同一目录下，运行脚本即可快速添加所有语音条目到配置文件中：
     
@@ -22,7 +24,7 @@
         python gener.py folderPath -u 
     ```
 
-添加完成后将 `manifest.json` 内的 `name` 等字段简单填写（可不填写），并将所有语音与 `manifest.json` 放至同一目录下打包为 `.zip` 使用网页加载该语音包即可。
+添加完成后将所有语音与 `manifest.json` 放至同一目录下打包为 `.zip` 使用网页加载该语音包即可。
 
 如果觉得打包麻烦，可以直接将含语音和配置文件的文件夹拷贝至该插件的语音包目录，下次只需要增删文件夹内的语音即可，之后使用 `gener.py` 快速更新 `manifest.json`。
 
