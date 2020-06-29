@@ -12,7 +12,7 @@
 脚本使用：
 1. 将 `gener.py` 以及 `manifest.json` 放在同一目录下，运行脚本即可快速添加所有语音条目到配置文件中：
     
-    ```py
+    ```bash
         # 添加脚本当前目录所有语音至配置文件
         python gener.py
         # 添加指定目录所有语音至配置文件
@@ -20,8 +20,8 @@
     ```
 2. 下次有新增或删除语音时，只需指定该语音包目录即可更新该目录下的 `manifest.json` ：
     
-    ```py
-        python gener.py folderPath -u 
+    ```bash
+        python gener.py folderPath -u
     ```
 
 添加完成后将所有语音与 `manifest.json` 放至同一目录下打包为 `.zip` 使用网页加载该语音包即可。
@@ -36,3 +36,14 @@
 之后可以根据自己需要，更改配置文件内的提示关键词和语音条目。
 
 注：为防止乱码，语音文件名不要使用中文。
+
+### 其他功能
+
+针对插件包内 `manifest.json` 中的所有关键词，将其去重并生成三种格式以便更好的触发识别：
+```js
+    "var" -> ["var", "var ", " var "]
+```
+命令：
+```bash
+    python gener.py folderPath -k
+```
