@@ -9,6 +9,7 @@
 
 脚本使用：
 1. 将 `gener.py` 以及 `manifest.json` 放在同一目录下，运行脚本即可快速添加所有语音条目到配置文件中：
+    
     ```py
         # 添加脚本当前目录所有语音至配置文件
         python gener.py
@@ -16,6 +17,7 @@
         python gener.py [folderPath]
     ```
 2. 下次有新增或删除语音时，只需指定该语音包目录即可更新该目录下的 `manifest.json` ：
+    
     ```py
         python gener.py folderPath -u 
     ```
